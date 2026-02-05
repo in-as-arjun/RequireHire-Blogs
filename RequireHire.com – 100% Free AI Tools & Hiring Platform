@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RequireHire.com – 100% Free AI Tools & Hiring Platform</title>
+    <meta name="description" content="Dive into RequireHire.com: India's innovative free AI-powered hiring platform. Gain insights on free AI interviews, resume optimization, mock sessions, and skill-focused job matching. Designed for seamless, affordable career advancement for job seekers in Jharkhand and across India.">
+    <meta name="keywords" content="free AI hiring platform India, affordable job search 2026, free AI interviews, free resume checker, skill based job portal, free mock interviews India, job opportunities Bihar & Jharkhand, RequireHire free tools, easy to use hiring platform">
+    
+    <!-- Apple-inspired system font stack for clean, modern aesthetic -->
+    <style>
+        :root {
+            --primary: #0071e3;       /* Vibrant blue for accents */
+            --text: #1d1d1f;          /* Deep text color */
+            --text-secondary: #6e6e73;/* Subtle secondary text */
+            --bg: #f5f5f7;            /* Light background */
+            --white: #ffffff;
+            --gray: #86868b;
+            --black: #000000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            font-size: 17px;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #0066cc;
+        }
+
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 52px;
+            background: rgba(245, 245, 247, 0.92);
+            backdrop-filter: saturate(180%) blur(20px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+        }
+
+        nav {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 600;
+            letter-spacing: -0.8px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 36px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        /* Hero Section - Symmetric, centered with depth and attractive gradient */
+        .hero {
+            padding: 160px 0 120px;
+            text-align: center;
+            background: linear-gradient(to bottom, #f5f5f7, #ffffff);
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100vw;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(0,113,227,0.05) 0%, transparent 50%);
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 600;
+            letter-spacing: -2px;
+            margin-bottom: 24px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero p {
+            font-size: 32px;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .hero .cta {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 14px 32px;
+            font-size: 21px;
+            font-weight: 500;
+            border-radius: 999px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,113,227,0.2);
+        }
+
+        .hero .cta:hover {
+            background: #0066cc;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0,113,227,0.3);
+        }
+
+        /* Knowledge Sections - Symmetric grid with brief title descriptions */
+        .knowledge-section {
+            padding: 120px 0;
+            background: white;
+        }
+
+        .knowledge-section h2 {
+            font-size: 48px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .knowledge-section .subtitle {
+            font-size: 24px;
+            color: var(--text-secondary);
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 80px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 48px;
+            justify-content: center;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 12px 48px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+        }
+
+        .card-content {
+            padding: 40px 32px;
+            flex-grow: 1;
+        }
+
+        .card h3 {
+            font-size: 32px;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .card .card-subtitle {
+            font-size: 20px;
+            color: var(--gray);
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 20px;
+            margin-bottom: 28px;
+        }
+
+        .card .learn-more {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        /* Highlight - Attractive centered box with connectivity flow */
+        .highlight {
+            background: linear-gradient(to bottom, #ffffff, #f5f5f7);
+            border-radius: 24px;
+            padding: 80px 48px;
+            text-align: center;
+            margin: 80px auto;
+            max-width: 1100px;
+            box-shadow: 0 12px 48px rgba(0,0,0,0.08);
+        }
+
+        .highlight h2 {
+            font-size: 44px;
+            margin-bottom: 28px;
+            font-weight: 600;
+        }
+
+        .highlight p {
+            font-size: 26px;
+            color: var(--text-secondary);
+            max-width: 900px;
+            margin: 0 auto 32px;
+        }
+
+        .highlight .connect-dots {
+            font-size: 20px;
+            color: var(--gray);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Footer - Minimal, symmetric, clean */
+        footer {
+            background: #f5f5f7;
+            padding: 80px 0 40px;
+            text-align: center;
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        footer p {
+            margin-bottom: 16px;
+        }
+
+        footer a {
+            margin: 0 16px;
+            color: var(--gray);
+        }
+
+        footer a:hover {
+            color: var(--text);
+        }
+
+        /* Enhanced Mobile Responsiveness for Neat UI */
+        @media (max-width: 1024px) {
+            .hero h1 { font-size: 52px; }
+            .hero p { font-size: 26px; }
+            .knowledge-section h2 { font-size: 40px; }
+            .card img { height: 240px; }
+            .grid { gap: 32px; }
+        }
+
+        @media (max-width: 768px) {
+            header { height: 48px; }
+            .nav-links { display: none; } /* Mobile menu placeholder */
+            .hero { padding: 120px 0 80px; }
+            .hero h1 { font-size: 40px; letter-spacing: -1px; }
+            .hero p { font-size: 22px; }
+            .knowledge-section { padding: 80px 0; }
+            .knowledge-section h2 { font-size: 32px; margin-bottom: 12px; }
+            .knowledge-section .subtitle { font-size: 20px; margin-bottom: 48px; }
+            .card { border-radius: 18px; }
+            .card-content { padding: 32px 24px; }
+            .card h3 { font-size: 28px; }
+            .card p { font-size: 18px; }
+            .highlight { padding: 60px 32px; border-radius: 18px; }
+            .highlight h2 { font-size: 36px; }
+            .highlight p { font-size: 22px; }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 0 16px; }
+            .hero h1 { font-size: 32px; }
+            .hero p { font-size: 20px; }
+            .hero .cta { padding: 12px 28px; font-size: 18px; }
+            .card img { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">RequireHire</div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">AI Tools</a>
+                <a href="#">Job Search</a>
+                <a href="#">For Employers</a>
+                <a href="#">Insights</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>RequireHire.com – 100% Free AI Tools & Hiring Platform</h1>
+                <p>Empowering job seekers in India with intelligent, skill-focused tools that bridge the gap between talent and opportunity. Discover how our platform makes career advancement accessible, efficient, and truly merit-based.</p>
+                <a href="https://www.requirehire.com/" class="cta" target="_blank">Explore Free Tools</a>
+            </div>
+        </section>
+
+        <section class="knowledge-section">
+            <div class="container">
+                <h2>Unlocking Potential Through AI</h2>
+                <p class="subtitle">A brief guide to our core features, connecting how each tool builds on the next to create a seamless path from skill assessment to job success.</p>
+                <div class="grid">
+                    <div class="card">
+                        <img src="https://substackcdn.com/image/fetch/$s_!HlOC!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F824dc54d-f386-4954-acaf-7482ae6162c2_1080x1350.png" alt="Magnifying glass symbolizing detailed skill discovery and matching">
+                        <div class="card-content">
+                            <h3>AI Skill Matching</h3>
+                            <p class="card-subtitle">Connecting your unique abilities to ideal roles</p>
+                            <p>Our advanced AI analyzes your skills beyond resumes, matching you with opportunities that value real-world capabilities. This approach eliminates biases, ensuring freshers from Jharkhand or anywhere in India get fair visibility.</p>
+                            <a href="#" class="learn-more">Dive Deeper →</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://substackcdn.com/image/fetch/$s_!w7AZ!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0eea3e69-405c-45dc-bb2c-648c0c3ffde1_1080x1350.png" alt="representing interactive AI interview simulations">
+                        <div class="card-content">
+                            <h3>Free AI Interviews</h3>
+                            <p class="card-subtitle">Practice that builds confidence and competence</p>
+                            <p>Engage in unlimited, on-demand simulations with instant feedback on technical and soft skills. This tool connects preparation to performance, helping you refine responses and stand out in real interviews effortlessly.</p>
+                            <a href="#" class="learn-more">Start Practicing →</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://substackcdn.com/image/fetch/$s_!Ryjw!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F85542297-f783-4b09-b1d9-20251196be3e_2551x1435.png" alt="Edit icon illustrating resume optimization and tool accessibility">
+                        <div class="card-content">
+                            <h3>Resume & Skill Tools</h3>
+                            <p class="card-subtitle">Streamlining your profile for maximum impact</p>
+                            <p>Free checkers optimize your resume for ATS systems while scoring skills objectively. By linking feedback to improvements, we help you connect the dots from self-assessment to employer interest.</p>
+                            <a href="#" class="learn-more">Optimize Now →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlight">
+            <div class="container">
+                <h2>Affordability Meets Ease</h2>
+                <p>RequireHire.com is completely free for job seekers – no subscriptions or hidden costs. This affordability ensures everyone, from students in Jharkhand to professionals nationwide, can access premium AI tools without financial barriers.</p>
+                <p class="connect-dots">Our intuitive interface is designed for simplicity: Sign up in seconds, navigate with ease, and get results fast. Connecting affordability with user-friendly design, we make skill-based hiring accessible, helping you focus on growth rather than complexity.</p>
+            </div>
+        </section>
+
+        <section class="knowledge-section" style="padding-top: 0;">
+            <div class="container" style="text-align: center;">
+                <h2>The Path Forward</h2>
+                <p class="subtitle">How our tools interconnect to shape your career journey</p>
+                <p style="font-size: 26px; color: var(--text-secondary); max-width: 800px; margin: 0 auto 48px;">Start with skill matching, refine through interviews, optimize your profile – each step builds on the last, creating a cohesive strategy for success in India's evolving job market.</p>
+                <a href="https://www.requirehire.com/" class="cta" target="_blank" style="font-size: 21px; padding: 14px 36px;">Join Free Today</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>RequireHire.com – Advancing Careers Through Skills and Innovation in India</p>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
