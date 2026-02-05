@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RequireHire — Master Your Interviews & Accelerate Your Career</title>
+  <style>
+    :root {
+      --primary: #6366f1;       /* indigo-500 */
+      --primary-dark: #4f46e5;
+      --secondary: #10b981;     /* emerald-500 */
+      --gray: #64748b;
+      --light: #f8fafc;
+      --dark: #0f172a;
+      --accent: #f59e0b;        /* amber-500 */
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: var(--dark);
+      color: white;
+      padding: 1.2rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      text-align: center;
+      padding: 8rem 1rem 6rem;
+      border-radius: 0 0 40px 40px;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      margin-bottom: 1.2rem;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 680px;
+      margin: 0 auto 2.5rem;
+      opacity: 0.95;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: var(--primary-dark);
+      font-weight: 700;
+      padding: 1rem 2.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: all 0.25s;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+
+    .btn-secondary {
+      background: var(--secondary);
+      color: white;
+    }
+
+    .features {
+      padding: 6rem 0;
+    }
+
+    h2.section-title {
+      text-align: center;
+      font-size: 2.6rem;
+      margin-bottom: 3.5rem;
+      color: var(--dark);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    }
+
+    .card-icon {
+      font-size: 2.8rem;
+      margin-bottom: 1.2rem;
+      color: var(--primary);
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .tips {
+      background: var(--light);
+      padding: 6rem 0;
+    }
+
+    .tip-list {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .tip-item {
+      background: white;
+      margin-bottom: 1.5rem;
+      padding: 1.6rem 2rem;
+      border-radius: 12px;
+      border-left: 5px solid var(--primary);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .tip-item h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+      color: var(--primary-dark);
+    }
+
+    .tip-item ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+      font-size: 0.95rem;
+      color: var(--gray);
+    }
+
+    .success-stories {
+      padding: 6rem 0;
+      background: linear-gradient(135deg, #e0e7ff 0%, #dbeafe 100%);
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .story-card {
+      background: white;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+
+    .story-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .story-card h3 {
+      font-size: 1.4rem;
+      color: var(--secondary);
+      margin-bottom: 0.5rem;
+    }
+
+    .story-card p {
+      font-style: italic;
+      color: var(--gray);
+    }
+
+    .career-guides {
+      padding: 6rem 0;
+    }
+
+    .guide-item {
+      margin-bottom: 2.5rem;
+      padding: 2rem;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    }
+
+    .guide-item h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .guide-item ul {
+      list-style-type: none;
+    }
+
+    .guide-item li {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .guide-item li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #cbd5e1;
+      text-align: center;
+      padding: 3rem 1rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.6rem; }
+      .hero { padding: 6rem 1rem 4rem; }
+      nav a { margin-left: 1.2rem; font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container header-content">
+      <div class="logo">RequireHire</div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#tips">Interview Tips</a>
+        <a href="#guides">Career Guides</a>
+        <a href="#stories">Success Stories</a>
+        <a href="#start">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Unlock Your Potential: Transform Interview Anxiety into Career Triumph</h1>
+      <p>Imagine walking into your dream job interview with unshakeable confidence, armed with personalized strategies, real-world simulations, and insider tips that have propelled thousands to success. RequireHire isn't just a platform—it's your launchpad to a fulfilling career, blending cutting-edge AI with proven career guidance to make you unstoppable.</p>
+      <a href="#start" class="btn">Begin Your Journey Free Today →</a>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Empowering Features That Drive Real Results</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--gray);">At RequireHire, we go beyond basic prep. Our platform dives deep into the nuances of interview dynamics, offering tools that adapt to your unique career path, skill level, and goals. Whether you're a fresh graduate or a seasoned professional pivoting industries, discover how our features can inspire your growth.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">🎤</div>
+          <h3>Immersive Mock Interviews</h3>
+          <p>Experience hyper-realistic simulations tailored to top companies like FAANG and beyond. Our AI interviewers adapt in real-time, probing deeper based on your responses, mimicking human recruiters. Track verbal fillers, pacing, and body language via webcam analysis for holistic improvement.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🤖</div>
+          <h3>Advanced AI Feedback & Analytics</h3>
+          <p>Receive granular insights: sentiment analysis on your answers, keyword matching to job descriptions, and predictive scoring on hire probability. Compare your performance against successful candidates' benchmarks, with actionable roadmaps to bridge gaps.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🏢</div>
+          <h3>Curated Company-Specific Prep</h3>
+          <p>Dive into databases of 10,000+ verified questions from recent interviews at Amazon, Google, Microsoft, and more. Understand cultural fits—like Amazon's 16 Leadership Principles—with case studies and role-playing scenarios that inspire strategic thinking.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📈</div>
+          <h3>Personalized Progress Tracking</h3>
+          <p>Visual dashboards chart your evolution: from initial baseline assessments to mastery levels. Set milestones, receive motivational reminders, and celebrate wins with badges—turning preparation into an inspiring journey of self-improvement.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🛤️</div>
+          <h3>Comprehensive Career Path Guides</h3>
+          <p>Explore detailed blueprints for roles like Software Engineer to CTO, Data Analyst to AI Lead. Each guide includes skill trees, timeline projections, salary benchmarks, and inspirational stories of real transitions.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🆓</div>
+          <h3>Accessible Free Tier with Premium Upgrades</h3>
+          <p>Start with unlimited access to core tools, then unlock premium features like live peer mocks, expert coaching sessions, and industry trend reports to accelerate your path to success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tips" id="tips">
+    <div class="container">
+      <h2 class="section-title">In-Depth Interview Mastery Tips to Inspire Confidence</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--gray);">These aren't generic advice—these are battle-tested strategies drawn from thousands of real interviews. Dive deep into each tip with explanations, examples, and why they work, to not just prepare you, but to ignite your passion for excelling.</p>
+      <div class="tip-list">
+        <div class="tip-item">
+          <h4>Master the STAR Method with Layers of Depth</h4>
+          <p>The STAR framework (Situation, Task, Action, Result) is your storytelling superpower. But go deeper: Infuse metrics (e.g., "increased efficiency by 40%"), reflect on lessons learned, and tie back to the company's values. Example: In a behavioral question about teamwork, describe a high-stakes project where your innovative action turned failure into triumph, inspiring interviewers with your resilience.</p>
+          <ul>
+            <li>Why it works: Quantifiable results make your story memorable and credible.</li>
+            <li>Pro tip: Practice variations for different scenarios to build adaptability.</li>
+          </ul>
+        </div>
+        <div class="tip-item">
+          <h4>Speak with Purpose: Pace, Pause, and Power</h4>
+          <p>Rushing through answers signals nervousness; instead, embrace thoughtful pauses to organize ideas. Aim for 60-80 words per minute, using pauses to emphasize key points. This technique not only clarifies your thoughts but inspires trust, showing you're composed under pressure.</p>
+          <ul>
+            <li>Why it works: It allows interviewers to absorb your insights, turning monologues into dialogues.</li>
+            <li>Pro tip: Record yourself—analyze filler words and refine for a polished delivery.</li>
+          </ul>
+        </div>
+        <div class="tip-item">
+          <h4>Ask Clarifying Questions to Demonstrate Depth</h4>
+          <p>Before diving into solutions, probe: "Could you elaborate on the scalability requirements?" This shows critical thinking and prevents assumptions. In technical interviews, it can reveal hidden constraints, inspiring innovative responses tailored precisely to the problem.</p>
+          <ul>
+            <li>Why it works: It positions you as a collaborator, not just a candidate.</li>
+            <li>Pro tip: Prepare 3-5 universal questions per interview type to spark deeper discussions.</li>
+          </ul>
+        </div>
+        <div class="tip-item">
+          <h4>Think Aloud with Structured Brilliance</h4>
+          <p>Verbalize your process: "I'll start with edge cases like null inputs, then outline the algorithm's time complexity." This transparency inspires confidence in your methodology, even if time runs short—highlight trade-offs like space vs. speed for bonus points.</p>
+          <ul>
+            <li>Why it works: Interviewers value process over perfection, revealing your problem-solving mindset.</li>
+            <li>Pro tip: Use frameworks like PEPs (Problem, Explore, Plan, Solve) for consistency.</li>
+          </ul>
+        </div>
+        <div class="tip-item">
+          <h4>Close with Impact: Summarize and Inspire</h4>
+          <p>End every answer strong: Recap key elements, mention alternatives, and link to broader impacts. "This approach not only solved the issue but scaled our system for future growth." Leave interviewers inspired by your forward-thinking vision.</p>
+          <ul>
+            <li>Why it works: It reinforces your value and ends on a high note.</li>
+            <li>Pro tip: Practice 30-second summaries to make them second nature.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="career-guides" id="guides">
+    <div class="container">
+      <h2 class="section-title">Inspiring Career Guides: Your Roadmap to Excellence</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--gray);">These guides provide profound insights, breaking down complex career trajectories into achievable steps. With real-world examples, timelines, and motivational narratives, they're designed to engage your ambition and propel you forward.</p>
+      <div class="guide-item">
+        <h3>From Junior Developer to Tech Lead: A 5-Year Blueprint</h3>
+        <p>Embark on a transformative journey: Start with foundational coding mastery, progress to system design expertise, and culminate in leadership roles. Inspire yourself with stories of devs who scaled startups to unicorns.</p>
+        <ul>
+          <li>Year 1: Build core skills in algorithms, data structures; contribute to open-source for visibility.</li>
+          <li>Year 2-3: Tackle real projects; learn cloud tech (AWS/Azure); network at conferences.</li>
+          <li>Year 4-5: Mentor juniors; lead cross-functional teams; aim for promotions with quantifiable impacts.</li>
+          <li>Salary progression: ; Key inspiration: "Every bug fixed is a step toward innovation."</li>
+        </ul>
+      </div>
+      <div class="guide-item">
+        <h3>Transitioning to Product Management: Skills & Strategies</h3>
+        <p>Shift from execution to vision: Master user empathy, prioritization frameworks like RICE, and stakeholder management. Draw inspiration from PMs who launched billion-dollar products.</p>
+        <ul>
+          <li>Phase 1: Gain domain knowledge; volunteer for product tasks in current role.</li>
+          <li>Phase 2: Certify in ; build a portfolio of mock roadmaps.</li>
+          <li>Phase 3: Network ; apply strategically with tailored resumes.</li>
+          <li>Inspiration: "PMs don't build products—they build futures."</li>
+        </ul>
+      </div>
+      <div class="guide-item">
+        <h3>Navigating Domain Switches: From Finance to Tech</h3>
+        <p>Overcome barriers with targeted upskilling: Learn tech stacks relevant to fintech, leverage transferable skills like analytics. Be inspired by switchers who doubled their impact and earnings.</p>
+        <ul>
+          <li>Step 1: Assess gaps; take online courses (e.g., Coursera ML for Finance).</li>
+          <li>Step 2: Build hybrid projects; e.g., a trading bot using Python.</li>
+          <li>Step 3: Target bridge roles; network at industry meetups.</li>
+          <li>Inspiration: "Change isn't risk—it's reinvention."</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="success-stories" id="stories">
+    <div class="container">
+      <h2 class="section-title">Real Stories That Inspire Action</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: A intern ">Hear from users who've turned preparation into placement . These in-depth testimonials reveal the challenges overcome, strategies employed, and triumphs achieved—fueling your own motivation.</p>
+      <div class="story-grid">
+        <div class="story-card">
+          <div class="story-icon">🚀</div>
+          <h3>Sarah, become pro at communication </h3>
+          <p>"RequireHire's mock sessions exposed my blind spots in system design. With AI feedback, I refined my approach, acing interviews that once intimidated me. From rejection to offer in 3 months—it's transformative!"</p>
+        </div>
+        <div class="story-card">
+          <div class="story-icon">🌟</div>
+          <h3> job seeker Product Manager</h3>
+          <p>"The career guides gave me a clear path from analyst to PM. Detailed tips on behavioral questions helped me weave compelling narratives. Landed my dream "</p>
+        </div>
+        <div class="story-card">
+          <div class="story-icon">💡</div>
+          <h3> A fresher  </h3>
+          <p>"Switching from marketing to data  seemed daunting, but RequireHire's company-specific questions and progress tracking kept me motivated. shape industries."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 6rem 0; text-align:center; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white;">
+    <div class="container">
+      <h2 style="font-size: 2.8rem; margin-bottom: 1.5rem;">Are You Ready to Inspire Your Own Success Story?</h2>
+      <p style="font-size: 1.3rem; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto; opacity: 0.95;">
+        Join a community of ambitious professionals who've elevated their careers. With RequireHire, every session builds not just skills, but the inspiration to achieve greatness.
+      </p>
+      <a href="#" id="start" class="btn btn-secondary" style="font-size: 1.3rem; padding: 1.3rem 3rem;">
+        Start Your Free Trial Now →
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025–2026 RequireHire • Empowering Careers, AI Interview at a Time</p>
+      <p style="margin-top: 1rem; font-size: 0.95rem;">
+        <a href="#" style="color: var(--primary); margin: 0 1rem;">Privacy Policy</a> •
+        <a href="#" style="color: var(--primary); margin: 0 1rem;">Terms of Service</a> •
+        <a href="#" style="color: var(--primary); margin: 0 1rem;">Contact Us</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
