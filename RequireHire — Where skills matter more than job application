@@ -1,0 +1,428 @@
+< html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>RequireHire — Get Hired Through Skills, Not Just Resumes • 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --accent: #8b5cf6;
+            --dark: #1e293b;
+            --gray: #64748b;
+            --light: #f8fafc;
+            --success: #10b981;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+            color: var(--dark);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            color: white;
+            padding: 140px 0 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.18) 0%, transparent 70%);
+            animation: rotate 28s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to   { transform: rotate(360deg); }
+        }
+
+        .hero-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(2.8rem, 7vw, 4.8rem);
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.25);
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            max-width: 760px;
+            margin: 0 auto 2.5rem;
+            opacity: 0.94;
+        }
+
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .badge {
+            background: rgba(255,255,255,0.22);
+            backdrop-filter: blur(10px);
+            padding: 10px 22px;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 0.98rem;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .btn {
+            display: inline-block;
+            background: white;
+            color: var(--primary-dark);
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.15rem;
+            box-shadow: 0 12px 32px rgba(0,0,0,0.22);
+            transition: all 0.32s ease;
+            margin: 0.8rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 44px rgba(0,0,0,0.28);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        section {
+            padding: 110px 0;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 1.2rem;
+            color: var(--primary-dark);
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--gray);
+            font-size: 1.25rem;
+            max-width: 720px;
+            margin: 0 auto 4rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2.4rem;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.4rem;
+            box-shadow: 0 10px 32px rgba(0,0,0,0.09);
+            transition: all 0.35s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 22px 52px rgba(99,102,241,0.2);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1.4rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .how-it-works {
+            background: white;
+        }
+
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 5rem;
+            flex-wrap: wrap;
+            position: relative;               /* ← FIX for overlapping numbers */
+            padding: 2.5rem;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 28px rgba(0,0,0,0.07);
+        }
+
+        .step:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .step-number {
+            font-size: 6rem;
+            font-weight: 800;
+            color: rgba(99,102,241,0.11);
+            position: absolute;
+            left: 1.5rem;
+            top: -2.5rem;
+            line-height: 1;
+            pointer-events: none;
+        }
+
+        .step-content {
+            flex: 1;
+            min-width: 340px;
+        }
+
+        .success-stories {
+            background: linear-gradient(to bottom, #f8fafc, white);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2.2rem;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 2.2rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 26px rgba(0,0,0,0.07);
+            position: relative;
+        }
+
+        .testimonial::before {
+            content: '“';
+            font-size: 7rem;
+            color: var(--primary);
+            opacity: 0.12;
+            position: absolute;
+            top: -30px;
+            left: 20px;
+            line-height: 1;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 6rem 1rem 4rem;
+        }
+
+        @media (max-width: 992px) {
+            .step {
+                gap: 3rem;
+                padding: 2rem;
+            }
+            .step-number {
+                font-size: 5rem;
+                left: 1rem;
+                top: -2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header { padding: 100px 0 70px; }
+            h2 { font-size: 2.4rem; }
+            .step, .step:nth-child(even) {
+                flex-direction: column;
+                text-align: center;
+            }
+            .step-number {
+                font-size: 4.5rem;
+                top: -2rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .btn { padding: 14px 32px; font-size: 1.05rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="hero-title">Stop Applying.<br>Get Interviewed.</h1>
+        <p class="hero-subtitle">RequireHire — India's first serious interview-first platform<br>where your skills speak before your resume</p>
+
+        <div class="badges">
+            <span class="badge">100% Free for Candidates</span>
+            <span class="badge">AI Interviews in English + Hindi</span>
+            <span class="badge">Freshers to 10+ Years</span>
+            <span class="badge">Jharkhand to Jammu</span>
+        </div>
+
+        <div>
+            <a href="https://www.requirehire.com/" target="_blank" class="btn">Start Skill Interview Now</a>
+            <a href="https://www.requirehire.com/" target="_blank" class="btn btn-outline">See How It Works →</a>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <h2>Why Thousands Are Moving to RequireHire in 2026</h2>
+        <p class="subtitle">Because applying to 200+ jobs and getting 3 replies is no longer acceptable</p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎤</div>
+                <h3>Real AI Interviews, Not Quizzes</h3>
+                <p>5–12 minute skill-focused conversations that actually evaluate your thinking, communication & domain knowledge.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>You Stay Anonymous Until You Choose</h3>
+                <p>Companies see only scores + structured insights first. Your name, photo, contact — revealed only when you say yes.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Instant Score + Personalised Feedback</h3>
+                <p>Know exactly where you stand and what to improve within seconds — best free interview coaching in India.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3>Ranking System = Visibility</h3>
+                <p>Top performers appear first in search results. Better skills = more interview requests, not more applications.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="how-it-works">
+    <div class="container">
+        <h2>How RequireHire Actually Works</h2>
+        <p class="subtitle">5 simple steps between you and your next interview</p>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Create Profile (3 min)</h3>
+                    <p>Basic info + resume upload. Our AI suggests improvements instantly.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Pick Role & Take Interview</h3>
+                    <p>Choose interesting job → answer AI questions at your convenience (mobile/laptop, any time).</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Get Score & Feedback</h3>
+                    <p>Instant detailed report: strengths, weaknesses, percentile, tips.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Appear in Rankings</h3>
+                    <p>High scorers get seen first by hundreds of companies.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3>Accept Real Interviews</h3>
+                    <p>Companies request access → you review summary → accept → talk to real humans.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align:center; margin-top:6rem;">
+            <a href="https://www.requirehire.com/" target="_blank" class="btn" style="font-size:1.35rem; padding:20px 50px;">
+                Begin Your First AI Interview →
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="success-stories">
+    <div class="container">
+        <h2>Real Stories from Real People</h2>
+        <p class="subtitle">From small towns to metro cities — skills are winning</p>
+
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p>“I gave 4 interviews in 9 days from Bokaro. Before RequireHire I applied to 170+ jobs in 4 months — 1 interview.”</p>
+                <p style="margin-top:1.6rem; font-weight:600;">Aman K. — Java Developer</p>
+            </div>
+
+            <div class="testimonial">
+                <p>“The feedback after AI interview helped me improve my System Design answers. Got 3x salary offer from product company.”</p>
+                <p style="margin-top:1.6rem; font-weight:600;">Priya S. — Bangalore</p>
+            </div>
+
+            <div class="testimonial">
+                <p>“2026 fresher from Dhanbad. Got selected in first company that saw my score. No referrals, no off-campus drive.”</p>
+                <p style="margin-top:1.6rem; font-weight:600;">Rohit M. — Fresher</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <h2 style="color:white; margin-bottom:2rem;">Ready to Let Your Skills Do The Talking?</h2>
+        <a href="https://www.requirehire.com/" target="_blank" class="btn" style="background:var(--success); color:white; font-size:1.35rem; padding:20px 52px;">
+            Start Free — No Credit Card Needed
+        </a>
+        <p style="margin-top:4rem; opacity:0.75; font-size:1rem;">
+            RequireHire — Where skills matter more than job applications<br>
+            © 2026 • Made for India • Loved by Job Seekers
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
