@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravi's Inspiring Journey: From Patna Tier-3 College to Stable Job – Career Tips for Freshers</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+            color: #2c3e50;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1a5276;
+            text-align: center;
+            font-size: 2.4em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #555;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #2980b9;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 8px;
+            margin-top: 50px;
+        }
+        .section {
+            background: #f9fcff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border-left: 6px solid #3498db;
+        }
+        .tip {
+            background: #e8f5ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 5px solid #27ae60;
+        }
+        .quote {
+            font-style: italic;
+            text-align: center;
+            font-size: 1.3em;
+            color: #34495e;
+            margin: 35px 0;
+            padding: 20px;
+            background: #ecf0f1;
+            border-radius: 12px;
+        }
+        strong {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ravi's Real Journey: Small-Town Boy to Corporate Success</h1>
+        <p class="subtitle">How a Commerce Graduate from Patna Overcame Challenges with RequireHire & Now Guides Freshers</p>
+
+        <div class="section">
+            <h2>1. The Starting Point – Humble Beginnings in Patna</h2>
+            <p>I come from a small district near Patna, Bihar. Studied commerce in a tier-3 college with limited placements, old infrastructure, and very few company visits. Most classmates were either preparing for government jobs or settling for local low-paying roles.</p>
+        </div>
+
+        <div class="section">
+            <h2>2. Major Challenges I Faced</h2>
+            <ul>
+                <li>No campus placements – zero big-company exposure</li>
+                <li>Traditional job portals → 1000+ applications → almost zero responses</li>
+                <li>Tier-3 college tag made my resume invisible to recruiters</li>
+                <li>Lack of interview practice & confidence in communication</li>
+                <li>Financial pressure – couldn't afford expensive coaching or courses</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>3. The Turning Point – Discovering RequireHire</h2>
+            <p>RequireHire changed everything. Instead of uploading resumes blindly, I got interviewed first through their AI-powered pre-screening. My commerce knowledge was scored fairly, profile became <strong>anonymized + skill-verified</strong>, and real HRs started reaching out directly.</p>
+            <p>Within months I cleared multiple rounds and landed a stable finance job in a reputed company – something I never imagined possible from my background.</p>
+        </div>
+
+        <div class="quote">
+            “RequireHire didn’t just give me interviews — it gave me visibility, fairness, and confidence. It leveled the playing field for small-town students like me.”
+        </div>
+
+        <div class="section">
+            <h2>4. Career Tips I Give to Every Fresher (Especially Commerce & Tier-3 Students)</h2>
+            
+            <div class="tip">
+                <strong>Tip 1:</strong> Stop mass-applying on Naukri/LinkedIn. Focus on platforms that let you get interviewed first — like RequireHire.
+            </div>
+            
+            <div class="tip">
+                <strong>Tip 2:</strong> Build real skills over fancy certifications. Practice daily — even 20 minutes of AI mock interviews makes a huge difference.
+            </div>
+            
+            <div class="tip">
+                <strong>Tip 3:</strong> Never hide your college name — highlight your knowledge instead. Skill-based platforms reward what you know, not where you studied.
+            </div>
+            
+            <div class="tip">
+                <strong>Tip 4:</strong> Use free/affordable tools. RequireHire’s AI mock interviews helped me fix my answers, body language & confidence without spending a rupee.
+            </div>
+            
+            <div class="tip">
+                <strong>Tip 5:</strong> Consistency beats talent. I practiced whenever I got 15–30 minutes free — bus rides, evenings, weekends. Small efforts compound fast.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>5. Where I Am Today & My Message</h2>
+            <p>Today I have a stable job, financial independence, and I’m continuously upskilling. Whenever I get free time, I log into RequireHire, take AI mock interviews, improve my weak areas, and stay interview-ready.</p>
+            <p><strong>RequireHire is not just a job portal — it is the future of fair hiring.</strong> It removes bias, brings opportunities to tier-2/tier-3 cities, and lets talent speak louder than college names.</p>
+        </div>
+
+        <div class="quote" style="background:#d4edda; border-left:5px solid #27ae60;">
+            “If you’re a fresher from a small town or tier-3 college — don’t lose hope. Get interviewed, not just listed. Platforms like RequireHire are built for students like us. Your opportunity is waiting — go claim it!”
+        </div>
+
+        <p style="text-align:center; font-weight:bold; margin-top:40px; color:#2980b9;">
+            — Ravi, Patna, Bihar
+        </p>
+    </div>
+</body>
+</html>
