@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Hiring Happens at RequireHire.com: Skills Over Loopholes of Resumes </title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #f8fafc; color: #1e293b; line-height: 1.6; }
+    .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    header { text-align: center; background: linear-gradient(135deg, #3b82f6, #1e40af); color: white; padding: 80px 20px; border-radius: 0 0 30px 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    h1 { font-size: 3.5rem; margin: 0; font-weight: 800; letter-spacing: -1px; }
+    h2 { font-size: 2.5rem; color: #1e40af; margin: 60px 0 20px; font-weight: 700; text-align: center; }
+    h3 { font-size: 1.8rem; color: #2563eb; margin: 40px 0 15px; }
+    p { font-size: 1.2rem; margin: 20px 0; }
+    .highlight { color: #3b82f6; font-weight: 600; }
+    .section { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); margin: 40px 0; }
+    ul { list-style: none; padding: 0; }
+    ul li { font-size: 1.2rem; margin: 15px 0; padding-left: 40px; position: relative; }
+    ul li::before { content: "✓"; color: #10b981; position: absolute; left: 0; font-size: 1.5rem; font-weight: bold; }
+    .cta { text-align: center; margin: 60px 0; }
+    .cta-button { display: inline-block; background: #3b82f6; color: white; padding: 18px 50px; font-size: 1.4rem; font-weight: 600; border-radius: 50px; text-decoration: none; box-shadow: 0 8px 25px rgba(59,130,246,0.4); transition: all 0.3s; }
+    .cta-button:hover { background: #1e40af; transform: translateY(-5px); }
+    img { max-width: 100%; height: auto; border-radius: 15px; margin: 30px 0; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+    .quote { font-style: italic; font-size: 1.4rem; color: #4b5563; text-align: center; margin: 50px 0; padding: 20px; border-left: 5px solid #3b82f6; background: #eff6ff; border-radius: 10px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Shaping the Future of Hiring from Today</h1>
+    <p style="font-size: 1.6rem; margin-top: 20px;">How at RequireHire.com, Your <span class="highlight">Real Skills</span> Get You Hired — Not Your Degree, Marks, or Fancy Numbers</p>
+  </header>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>Are You Tired of Being Judged by Your Resume?</h2>
+      <p>Endless job applications, rejections because of "not enough experience" or "wrong college," and no real chance to show what you can actually do? This is the reality for millions of job seekers in India — especially freshers and those from non-elite backgrounds.</p>
+      <p>But what if hiring was <strong>fair</strong>, <strong>skill-first</strong>, and focused on your true potential? That's exactly what <strong>RequireHire.com</strong> is bringing to India.</p>
+      <img src="https://substackcdn.com/image/fetch/$s_!FBcl!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F66e13350-20f1-4cec-966f-342805084531_1024x1024.png" alt="Confident job seeker in interview">
+    </div>
+
+    <div class="section">
+      <h2>Introducing RequireHire.com: India's Interview-First Platform</h2>
+      <p>RequireHire.com is revolutionizing recruitment with an <strong>interview-first</strong> approach. Forget endless resume uploads and ATS filters. Here, companies discover and hire based on your <strong>verified skills</strong> — not your qualifications or numbers.</p>
+      <p>Powered by AI, the platform gives you direct access to real interviews, making hiring faster, fairer, and more merit-based.</p>
+      <img src="https://substackcdn.com/image/fetch/$s_!iNuX!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3be82788-67ac-4bf8-b809-8993df4b4e99_2545x1444.png" alt="AI-powered technical interview">
+    </div>
+
+    <div class="section">
+      <h2>How Hiring Works on RequireHire.com</h2>
+      <h3>For Job Seekers (It's 100% Free!)</h3>
+      <ul>
+        <li>Search thousands of jobs across India by role, location, salary, and company.</li>
+        <li>Complete a quick <strong>AI-powered interview</strong> at your convenience.</li>
+        <li>Get instant <strong>AI-generated skill scores</strong> and detailed feedback.</li>
+        <li>Appear in employer searches — ranked by real skills, not resume keywords.</li>
+        <li>Employers request your details for real interviews — no more ghosting!</li>
+      </ul>
+      <h3>For Employers</h3>
+      <ul>
+        <li>Browse pre-screened, interview-ready candidates ranked by skill scores.</li>
+        <li>View AI interview reports with behavioral insights and verified performance.</li>
+        <li>Request access and hire with confidence.</li>
+      </ul>
+      <img src="https://substackcdn.com/image/fetch/$s_!d-Q6!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1d7d9e09-c867-4800-be63-0893b052fb66_1080x1350.jpeg" alt="AI interview process">
+    </div>
+
+    <div class="section">
+      <h2>Powerful Features That Set You Apart</h2>
+      <ul>
+        <li><strong>AI-Powered Interviews & Skill Scoring</strong> — Objective evaluation of your abilities.</li>
+        <li><strong>Free AI Tools</strong> — Resume Checker, Voice Mock Interviews (28+ roles, India-focused questions).</li>
+        <li><strong>Verified Profiles Only</strong> — No fake resumes or unqualified applicants.</li>
+        <li><strong>Pan-India Reach</strong> — Jobs in IT, Data Science, Marketing, and more — from Bangalore to Tier-3 cities.</li>
+        <li><strong>Campus Hiring</strong> — Special for freshers from Tier-1, 2, 3 colleges.</li>
+      </ul>
+      <img src="https://moderncampus.com/_resources/images/blog/teal-and-orange-path-illustration.jpg" alt="Skills-based career pathway">
+    </div>
+
+    <div class="section">
+      <h2>Why This Is Extremely Beneficial for You</h2>
+      <p>RequireHire.com levels the playing field. Whether you're a fresher without experience, from a small town, or switching careers — your <strong>skills</strong> matter most here.</p>
+      <p>No more getting filtered out by degrees or percentages. Get instant feedback to improve. Land interviews faster. Build confidence. And get hired based on what you can <strong>actually deliver</strong>.</p>
+      <p>Thousands are already practicing with free tools and getting discovered. The future of hiring is here — and it's skills-first.</p>
+      <div class="quote">
+        "Get Interviewed. Not Just Listed." – RequireHire.com
+      </div>
+      <img src="https://substackcdn.com/image/fetch/$s_!1kqN!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb064c5b6-6bfa-45ca-9f0d-11e12e5c456e_1080x1350.jpeg" alt="REQUIREHIRE HELPING ">
+    </div>
+
+    <div class="cta">
+      <h2>Ready to Shape Your Future?</h2>
+      <p>Join RequireHire.com today — completely free for job seekers. Show the world what you're truly capable of!</p>
+      <a href="https://requirehire.com" class="cta-button" target="_blank">Start Your AI Interview Now →</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
