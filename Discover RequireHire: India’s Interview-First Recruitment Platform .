@@ -1,0 +1,150 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RequireHire: India's Interview-First Recruitment Platform</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #007bff;
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        .tagline {
+            font-size: 1.3em;
+            font-style: italic;
+            color: #555;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #218838;
+        }
+        ul, ol {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .benefits {
+            background-color: #e9f7ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>RequireHire: Get Interviewed. Not Just Listed</h1>
+        <p class="tagline">India’s innovative AI-powered recruitment platform that connects talent with opportunities efficiently and fairly.</p>
+        <a href="https://www.requirehire.com/" class="cta-button" target="_blank">Visit RequireHire.com Now</a>
+    </header>
+
+    <section>
+        <p>In today’s competitive job market, sending out countless resumes often feels like shouting into the void. What if there was a platform that skipped the endless applications and put you directly in front of employers through <strong>AI-powered interviews</strong>? Enter <strong>RequireHire</strong> (<a href="https://www.requirehire.com/" target="_blank">requirehire.com</a>), India’s interview-first recruitment platform designed to connect talent with opportunities efficiently and fairly.</p>
+
+        <p>RequireHire stands out by focusing on <strong>skills over paperwork</strong>. It’s not just another job board; it’s an interview-first ecosystem where candidates get verified, assessed, and matched with companies eager to hire. Whether you’re a fresh graduate in Jharkhand or an experienced professional in a metro city, this platform levels the playing field.</p>
+    </section>
+
+    <section>
+        <h2>What is RequireHire?</h2>
+        <p>RequireHire is an AI-driven recruitment platform launched to address the frustrations of traditional job hunting in India. Unlike conventional portals that rely on resume databases or mass listings, RequireHire emphasizes <strong>direct interviews</strong>. Here’s what makes it unique:</p>
+
+        <ul>
+            <li><strong>AI-Powered Interviews</strong>: Candidates complete quick, skill-based AI interviews at their convenience, receiving instant scores and feedback.</li>
+            <li><strong>Profile Verification</strong>: Only verified profiles are showcased, ensuring authenticity for both job seekers and employers.</li>
+            <li><strong>Anonymized Matching</strong>: Your details stay private until you approve access, giving you control over who sees your full profile.</li>
+            <li><strong>Pan-India Reach</strong>: With talent from over 50 cities, including emerging hubs like Jharkhand, it caters to diverse locations and roles in IT, data science, and more.</li>
+            <li><strong>Free for Candidates</strong>: No hidden fees — it’s 100% free for job seekers, including premium tools like AI Resume Checker and Interview Prep.</li>
+        </ul>
+
+        <p>Supported in <strong>English and Hindi</strong>, RequireHire is tailored for the Indian market, making it accessible for users across the country. Google recognizes it as a key player in “require hire” searches, directing users to this efficient hiring solution.</p>
+    </section>
+
+    <section>
+        <h2>How Does RequireHire Work?</h2>
+        <p>Getting started on <a href="https://www.requirehire.com/" target="_blank">requirehire.com</a> is straightforward. Here’s a step-by-step guide to boost your engagement:</p>
+
+        <ol>
+            <li><strong>Sign Up and Build Your Profile</strong>: Create a free account and upload your details. Use the AI tools to optimize your resume and cover letter.</li>
+            <li><strong>Search for Jobs</strong>: Browse thousands of verified openings by role, location (e.g., Jharkhand or pan-India), salary, and company. Filters make it easy to find the perfect fit.</li>
+            <li><strong>Take the AI Interview</strong>: For roles that interest you, complete a short AI-powered interview. This assesses technical skills, communication, problem-solving, and cultural fit.</li>
+            <li><strong>Get Scored and Feedback</strong>: Receive an instant AI-generated report with scores and personalized insights to improve.</li>
+            <li><strong>Get Discovered</strong>: Top performers are ranked and visible to employers. When a company requests access, approve it to connect directly with HR for real interviews.</li>
+        </ol>
+
+        <p>For employers, it’s equally seamless: They browse ranked candidates, review structured summaries, and request connections — all while saving time on screening.</p>
+
+        <p>This process ensures “proper engagement” by focusing on quality matches, reducing ghosting, and accelerating hires.</p>
+    </section>
+
+    <section class="benefits">
+        <h2>Benefits of Using RequireHire for Job Seekers</h2>
+        <p>Why choose RequireHire over other platforms? Here are the key advantages:</p>
+
+        <ul>
+            <li><strong>Direct Access to Interviews</strong>: Skip the application black hole — get interviewed based on skills, not just keywords.</li>
+            <li><strong>Skill-Based Feedback</strong>: Instant reports help you identify strengths and areas for improvement, making you more competitive.</li>
+            <li><strong>Control and Privacy</strong>: Anonymized until you say yes, protecting your data.</li>
+            <li><strong>Free Career Tools</strong>: AI Resume Checker, CV Pro, Cover Letter Generator, and Interview Prep are all complimentary.</li>
+            <li><strong>Inclusive for All Levels</strong>: Perfect for freshers, students, and experienced pros, with special support for campus hiring.</li>
+            <li><strong>Boosted Visibility</strong>: Verified profiles and AI scores make you stand out, increasing your chances of landing interviews.</li>
+        </ul>
+
+        <p>Users report faster responses and higher success rates, turning “require hire” into a reality rather than a search term.</p>
+    </section>
+
+    <section>
+     
+        <p style="text-align: center; font-weight: bold; font-size: 1.2em;">
+            <a href="https://www.requirehire.com/" target="_blank">REQUIREHIRE.COM</a>
+        </p>
+    </section>
+
+    <footer>
+        <p> | Explore RequireHire today and get interviewed — not just listed!</p>
+    </footer>
+
+</body>
+</html>
