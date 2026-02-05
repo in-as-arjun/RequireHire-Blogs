@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How RequireHire's AI Voice Interviews Get You Interview-Ready in Just 7 Days</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg:            #ffffff;
+      --text-base:     #111111;
+      --surface:       #ffffff;
+      --card:          #f9f9f9;
+      --border:        #e0e0e0;
+      --radius:        12px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text-base);
+      line-height: 1.72;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      padding: 60px 0 40px;
+      text-align: center;
+    }
+
+    .rainbow-title {
+      font-size: clamp(2.6rem, 7vw, 4.8rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.4rem;
+      background: linear-gradient(90deg, #ff3366, #ff9933, #33cc33, #3399ff, #cc33ff, #ff3366);
+      background-size: 300% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbow 12s linear infinite;
+    }
+
+    @keyframes rainbow {
+      0%   { background-position: 0% 50%; }
+      100% { background-position: 300% 50%; }
+    }
+
+    .subtitle {
+      font-size: clamp(1.18rem, 2.8vw, 1.42rem);
+      color: #444444;
+      max-width: 820px;
+      margin: 0 auto 3rem;
+      font-weight: 400;
+    }
+
+    .cta-hero {
+      display: inline-block;
+      padding: 14px 32px;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      color: white;
+      font-weight: 600;
+      font-size: 1.18rem;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(118,75,162,0.28);
+      transition: all 0.3s ease;
+    }
+
+    .cta-hero:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 35px rgba(118,75,162,0.38);
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    h2 {
+      font-size: clamp(2.1rem, 4.2vw, 2.9rem);
+      font-weight: 700;
+      margin: 0 0 2.8rem;
+      color: #1a1a1a;
+      position: relative;
+      display: inline-block;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 5px;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      bottom: -14px;
+      left: 0;
+      border-radius: 3px;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 960px;
+      margin: 5rem auto;
+      padding: 0 20px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background: linear-gradient(to bottom, #667eea, #764ba2, #a55eea);
+      top: 0;
+      bottom: 0;
+      left: 40px;
+      border-radius: 2px;
+    }
+
+    .day-card {
+      position: relative;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2.2rem 2.4rem 2.2rem 100px;   /* left padding for number */
+      margin: 3.5rem 0;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      transition: transform 0.28s ease, box-shadow 0.28s ease;
+      min-height: 160px;
+    }
+
+    .day-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 14px 32px rgba(0,0,0,0.12);
+    }
+
+    .day-number {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.1rem;
+      font-weight: 800;
+      box-shadow: 0 8px 20px rgba(102,126,234,0.35);
+      z-index: 2;
+    }
+
+    .day-card h3 {
+      font-size: 1.48rem;
+      margin-bottom: 1.1rem;
+      color: #111;
+    }
+
+    .day-card p {
+      color: #333;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2.2rem;
+      margin: 4.5rem 0;
+    }
+
+    .benefit {
+      background: var(--card);
+      padding: 2.4rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .benefit:hover {
+      border-color: #764ba2;
+      transform: translateY(-6px);
+    }
+
+    .benefit-icon {
+      font-size: 3.4rem;
+      margin-bottom: 1.3rem;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    footer.cta-section {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 100px 0 80px;
+      text-align: center;
+      margin-top: 6rem;
+    }
+
+    footer h2 {
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      margin-bottom: 1.8rem;
+      color: white;
+      background: none;
+    }
+
+    footer p {
+      font-size: 1.28rem;
+      max-width: 760px;
+      margin: 0 auto 3rem;
+      opacity: 0.95;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 50px 0 30px; }
+      section { padding: 60px 0; }
+      .day-card {
+        padding: 2rem 1.8rem 2rem 90px;
+      }
+      .day-number {
+        width: 68px;
+        height: 68px;
+        font-size: 1.8rem;
+        left: 12px;
+      }
+      .timeline::before { left: 46px; }
+      .cta-hero { padding: 12px 28px; font-size: 1.08rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1 class="rainbow-title">How RequireHire's AI Voice Interviews Get You Interview-Ready in Just 7 Days</h1>
+    
+    <p class="subtitle">Turn passive watching into active speaking. Get real-time feedback, adaptive difficulty, and visible progress — from anxious to confident in one focused week.</p>
+
+    <div style="margin: 3rem 0 4rem; text-align:center;">
+      <a href="https://www.requirehire.com/" class="cta-hero">Start Your Free 7-Day Challenge →</a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section>
+    <h2>The 7-Day Confidence Building Roadmap</h2>
+    
+    <div class="timeline">
+
+      <div class="day-card">
+        <div class="day-number">1</div>
+        <h3>First Honest Baseline</h3>
+        <p>Jump straight into a full AI voice mock interview — no warm-up. Receive instant scoring on structure, filler words, clarity, confidence, and technical accuracy.</p>
+      </div>
+
+      <div class="day-card">
+        <div class="day-number">2–3</div>
+        <h3>Precision Weakness Training</h3>
+        <p>Daily sessions focus exactly on your lowest-scoring categories. Behavioral examples, system design explanations, coding walkthroughs — drilled where you need it most.</p>
+      </div>
+
+      <div class="day-card">
+        <div class="day-number">4–5</div>
+        <h3>Live Pressure Practice</h3>
+        <p>Timed answers + follow-ups + interruptions + unexpected pivots. Experience real interviewer dynamics. Watch your confidence metrics climb visibly.</p>
+      </div>
+
+      <div class="day-card">
+        <div class="day-number">6</div>
+        <h3>Polish Delivery & Energy</h3>
+        <p>Refine storytelling (STAR method), project explanations, salary discussions. Get tone, pace, enthusiasm, and naturalness feedback — sound authentic and strong.</p>
+      </div>
+
+      <div class="day-card">
+        <div class="day-number">7</div>
+        <h3>Final Full Simulation + Report</h3>
+        <p>Complete 60–75 min realistic mock (HR round + Technical). See Day 1 vs Day 7 comparison. Receive your personalized “ready to apply” summary.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Why Speaking with AI Beats Every Other Method</h2>
+
+    <div class="benefits-grid">
+      <div class="benefit">
+        <div class="benefit-icon">🎤</div>
+        <h3>Verbal Practice = Fastest Gains</h3>
+        <p>You improve quickest when you actually speak — not read, type, or watch. Every session forces real vocal output.</p>
+      </div>
+
+      <div class="benefit">
+        <div class="benefit-icon">⚡</div>
+        <h3>Instant & Fearless Feedback</h3>
+        <p>No waiting days for mentor comments. Precise, non-judgmental insights arrive in seconds — every time.</p>
+      </div>
+
+      <div class="benefit">
+        <div class="benefit-icon">🧠</div>
+        <h3>Questions That Adapt to You</h3>
+        <p>Difficulty rises or falls based on your answers. No generic list — truly personalized learning curve.</p>
+      </div>
+
+      <div class="benefit">
+        <div class="benefit-icon">🌙</div>
+        <h3>Any Time, Any Place</h3>
+        <p>Practice at 3 a.m., during lunch, or between classes. The AI interviewer never sleeps or gets tired.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="cta-section">
+  <div class="container">
+    <h2>Ready to Become Interview-Ready in One Week?</h2>
+    <p>Join thousands of Indian freshers & experienced developers who transformed their performance using RequireHire AI Voice Interviews.<br><strong>Completely free — no card required.</strong></p>
+    
+    <div style="margin-top: 2.8rem;">
+      <a href="https://www.requirehire.com/" class="cta-hero">Begin Your Free 7-Day Journey →</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
