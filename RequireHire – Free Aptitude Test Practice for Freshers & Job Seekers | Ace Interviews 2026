@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RequireHire – Free Aptitude Test Practice for Freshers & Job Seekers | Ace Interviews 2026</title>
+  <meta name="description" content="RequireHire provides a completely free platform for freshers and job seekers to practice aptitude tests, quantitative aptitude, logical reasoning, verbal ability and interview questions. Unlimited royalty-free practice series with solutions to crack campus placements & job interviews."/>
+  <meta name="keywords" content="aptitude test practice, free aptitude test for freshers, job interview preparation, placement aptitude questions, logical reasoning practice, quantitative aptitude, verbal ability test, interview practice platform, freshers jobs 2026"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="author" content="RequireHire Team"/>
+  
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="RequireHire – Best Free Aptitude Practice Platform for Freshers & Job Seekers"/>
+  <meta property="og:description" content="Practice unlimited royalty-free aptitude tests, mock interviews and placement papers. Boost confidence and crack your dream job!"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.requirehire.com/"/>
+  <meta property="og:image" content="https://www.requirehire.com/images/og-aptitude-practice.jpg"/> <!-- replace with real image -->
+
+  <!-- Structured Data (Schema.org) for better SEO & rich snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "RequireHire",
+    "url": "https://www.requirehire.com/",
+    "description": "Free aptitude test practice platform for freshers and job seekers with royalty-free questions series to prepare for interviews and placements.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.requirehire.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "RequireHire Aptitude Practice",
+    "operatingSystem": "Web",
+    "applicationCategory": "EducationApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "1247"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --primary-dark: #4338ca;
+      --text: #1f2937;
+      --light: #f9fafb;
+    }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      margin: 0;
+      color: var(--text);
+      background: var(--light);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      padding: 5rem 1rem 4rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    h1 { font-size: 3rem; margin: 0.5rem 0; }
+    h2 { font-size: 2.4rem; color: var(--primary-dark); }
+    .btn {
+      display: inline-block;
+      background: white;
+      color: var(--primary);
+      font-weight: bold;
+      padding: 1rem 2.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      margin: 1.5rem 0.8rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      transition: all 0.3s;
+    }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+    section { padding: 5rem 0; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin: 4rem 0; }
+    .feature-card {
+      background: white;
+      padding: 2.2rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    footer {
+      background: var(--primary-dark);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 2.4rem; }
+      h2 { font-size: 2rem; }
+      .btn { padding: 0.9rem 1.8rem; font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>RequireHire</h1>
+    <p style="font-size:1.5rem; margin:1.5rem 0; max-width:800px; margin-left:auto; margin-right:auto;">
+      Free Platform for Freshers & Job Seekers – Practice Aptitude Tests, Interview Questions & Placement Series
+    </p>
+    <p style="font-size:1.3rem; opacity:0.95;">
+      After  signup   |  Unlimited royalty-free aptitude practice | Detailed solutions | Mobile-friendly | 
+    </p>
+    <div>
+      <a href="#start-practice" class="btn">Start Free Practice Now</a>
+      <a href="#features" class="btn" style="background:transparent; border:2px solid white; color:white;">Explore Features</a>
+    </div>
+  </div>
+</header>
+
+<section id="features">
+  <div class="container">
+    <h2 style="text-align:center;">Why Choose RequireHire for Aptitude & Interview Preparation?</h2>
+    
+    <div class="features">
+      <div class="feature-card">
+        <h3>100% Free & Royalty-Free Questions</h3>
+        <p>Use thousands of high-quality aptitude questions without any cost or copyright restrictions. Ideal for freshers preparing for campus placements, off-campus drives & job interviews.</p>
+      </div>
+      
+      <div class="feature-card">
+        <h3>Complete Aptitude Series Coverage</h3>
+        <p>Quantitative Aptitude • Logical Reasoning • Verbal Ability • Data Interpretation • Puzzle Solving • Technical MCQs – everything you need in one place.</p>
+      </div>
+      
+      <div class="feature-card">
+        <h3>Mock Tests + Timed Practice</h3>
+        <p>Full-length mock tests simulating real company exams (TCS, Infosys, Accenture, Wipro, Cognizant & more). Track progress and improve speed & accuracy.</p>
+      </div>
+      
+      <div class="feature-card">
+        <h3>Detailed Solutions & Explanations</h3>
+        <p>Step-by-step solutions for every question so you understand concepts instead of just memorizing answers.</p>
+      </div>
+      
+      <div class="feature-card">
+        <h3>Mobile-Friendly – Practice Anywhere</h3>
+        <p>Responsive design works perfectly on phone, tablet or laptop. Prepare during commute or breaks.</p>
+      </div>
+      
+      <div class="feature-card">
+        <h3>Regularly Updated 2026 Patterns</h3>
+        <p>Latest aptitude patterns followed by product-based companies, service-based companies & startups in 2026.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="start-practice" style="background:#f3f4f6;">
+  <div class="container" style="text-align:center;">
+    <h2>Ready to Crack Your Next Interview?</h2>
+    <p style="font-size:1.4rem; max-width:700px; margin:2rem auto;">
+      Join thousands of freshers who improved their scores and landed dream jobs using RequireHire's free aptitude practice platform.
+    </p>
+    <a href="https://app.requirehire.com/practice" class="btn" style="font-size:1.4rem; padding:1.3rem 3rem;">
+      🚀 Start Unlimited Free Practice Now
+    </a>
+    <p style="margin-top:2rem; color:#4b5563;">
+      No credit card •  signup required to begin • 100% free forever
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 RequireHire. All rights reserved.</p>
+    <p>
+      <a href="/about" style="color:#c7d2fe; margin:0 1rem;">About</a> •
+      <a href="/privacy" style="color:#c7d2fe; margin:0 1rem;">Privacy Policy</a> •
+      <a href="/contact" style="color:#c7d2fe; margin:0 1rem;">Contact</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
