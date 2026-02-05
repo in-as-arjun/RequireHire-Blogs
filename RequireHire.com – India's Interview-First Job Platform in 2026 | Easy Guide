@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RequireHire.com – India's Interview-First Job Platform in 2026 | Easy Guide</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+
+  <style>
+    :root {
+      --bg:          #f8f9ff;           /* very light blue-white */
+      --text:        #0f172a;           /* deep black-blue text */
+      --heading:     #1e40af;           /* strong blue */
+      --accent:      #3b82f6;           /* bright blue links */
+      --success:     #16a34a;           /* fresh green */
+      --danger:      #ef4444;           /* light red / soft danger */
+      --purple:      #7c3aed;
+      --card:        #ffffff;
+      --border:      #e2e8f0;
+      --highlight:   #eff6ff;           /* very pale blue highlight */
+      --code-bg:     #f1f5f9;
+      --note-border: #60a5fa;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.68;
+      color: var(--text);
+      background: var(--bg);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.2rem 1.1rem;
+    }
+
+    h1 {
+      font-size: 1.95rem;
+      font-weight: 700;
+      color: var(--heading);
+      margin: 1.6rem 0 1rem;
+      border-bottom: 3px solid #bfdbfe;
+      padding-bottom: 0.6rem;
+    }
+
+    h2 {
+      font-size: 1.65rem;
+      color: var(--heading);
+      margin: 2.5rem 0 1.1rem;
+    }
+
+    h3 {
+      font-size: 1.38rem;
+      color: #1d4ed8;
+      margin: 2rem 0 0.9rem;
+    }
+
+    p {
+      margin: 1.15rem 0;
+      color: #1e293b;
+    }
+
+    strong {
+      color: #111827;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    pre {
+      background: var(--code-bg);
+      border-radius: 10px;
+      padding: 1.2rem;
+      overflow-x: auto;
+      margin: 1.7rem 0;
+      border: 1px solid #cbd5e1;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    }
+
+    code {
+      font-family: 'SF Mono', Consolas, Monaco, monospace;
+      font-size: 0.97rem;
+    }
+
+    .note {
+      background: #f0f9ff;
+      border-left: 5px solid var(--note-border);
+      padding: 1.2rem 1.4rem;
+      margin: 1.9rem 0;
+      border-radius: 8px;
+      color: #1e40af;
+    }
+
+    .pros-cons {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.8rem;
+      margin: 2.4rem 0;
+    }
+
+    @media (min-width: 640px) {
+      .pros-cons {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .card {
+      background: var(--card);
+      padding: 1.6rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .pros {
+      border-top: 4px solid var(--success);
+    }
+
+    .cons {
+      border-top: 4px solid var(--danger);
+    }
+
+    .check-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 1.5rem 0;
+    }
+
+    .check-list li {
+      padding-left: 2.1em;
+      margin: 0.65em 0;
+      position: relative;
+    }
+
+    .check-list li::before {
+      content: "✔";
+      color: var(--success);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+      font-size: 1.15em;
+    }
+
+    .center {
+      text-align: center;
+      color: #64748b;
+      font-size: 0.94rem;
+      margin: 4rem 0 2rem;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 1.75rem; }
+      h2 { font-size: 1.5rem; }
+      h3 { font-size: 1.3rem; }
+      .container { padding: 1.6rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>RequireHire.com in 2026: Get Interviewed – Not Just Listed</h1>
+
+<p>Are you tired of sending <strong>200+ applications</strong> and getting <strong>zero interviews</strong>?</p>
+
+<p><strong>RequireHire.com</strong> is changing how people find jobs — especially in India right now.</p>
+
+<p>It's an <strong>interview-first</strong> platform:</p>
+
+<ul class="check-list">
+  <li>Companies see your real interview performance first</li>
+  <li>Skip endless forms and keyword filters</li>
+  <li>Most features are completely free for candidates</li>
+  <li>Verified profiles build more recruiter trust</li>
+</ul>
+
+<div class="note">
+  <strong>2026 reality check:</strong> Your voice, confidence, and answers matter far more than resume formatting. RequireHire puts your actual skills in the spotlight.
+</div>
+
+<h2>How Easy It Is to Use (Step-by-Step – 2026)</h2>
+
+<ol>
+  <li>Visit <a href="https://www.requirehire.com/" target="_blank">requirehire.com</a></li>
+  <li>Click “on login/ sign in as employee / employer on top right corner ” (Google / email / phone / resume as well  – under 45 seconds)</li>
+  <li>Add basic info  (optional – AI extracts most details)</li>
+  <li>Complete 1–2 short AI mock interviews (voice + camera, very realistic)</li>
+  <li>Get your Skill Score & Profile Badge</li>
+  <li>Recruiters discover you → real interview invites arrive</li>
+</ol>
+
+<p><strong>Total time to become visible to recruiters:</strong> usually <strong>10–15 minutes</strong>.</p>
+
+<h2>What Makes It Different from Naukri & LinkedIn?</h2>
+
+<div class="pros-cons">
+  <div class="card pros">
+    <h3>Advantages</h3>
+    <ul class="check-list">
+      <li>Direct interview access – no more application black holes</li>
+      <li>AI mock interviews in your language and style</li>
+      <li>Skill-based shortlisting (not keyword spam)</li>
+      <li>Free for job seekers and freshers</li>
+      <li>Voice + face simulation feels like real HR rounds</li>
+    </ul>
+  </div>
+
+  <div class="card cons">
+    <h3>Current Limitations</h3>
+    <ul>
+      <li>Still growing – fewer companies right now</li>
+      <li>Best suited for IT, tech, startup & product roles</li>
+      <li>AI interviews perform best with good mic & internet</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Typical First Day Flow</h2>
+
+<pre><code class="language-bash"># 1. Open in browser
+https://www.requirehire.com
+
+# 2. Sign up quickly (30–50 seconds)
+
+# 3. Build profile + take one AI mock interview
+#    → answer 5–8 questions (tech + behavioral)
+
+# 4. Get Skill Score & Badge → profile goes live
+
+# 5. Start receiving interview invites (often 1–7 days)</code></pre>
+
+<h2>Should You Try RequireHire in 2026?</h2>
+
+<p><strong>Yes – especially if you:</strong></p>
+
+<ul class="check-list">
+  <li>Are a fresher or have 0–3 years experience</li>
+  <li>Are targeting IT, software, data, AI/ML, product roles</li>
+  <li>Are tired of applying with no response</li>
+  <li>Want free, low-pressure interview practice</li>
+</ul>
+
+<p>Very low effort to start — huge potential reward.</p>
+
+<p style="font-size: 1.18rem; font-weight: 600; margin: 2.5rem 0; color: var(--accent);">
+  <a href="https://www.requirehire.com/" target="_blank">→ Create Your Free Profile on RequireHire Today</a>
+</p>
+
+<div class="center">
+  Made for job seekers who want real interviews • January 27,  2026 •
+</div>
+
+</div>
+
+</body>
+</html>
