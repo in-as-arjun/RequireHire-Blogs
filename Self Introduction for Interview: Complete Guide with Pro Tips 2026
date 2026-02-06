@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Self Introduction for Interview: Complete Guide with Pro Tips 2026</title>
+    <meta name="description" content="Complete guide on self introduction for interview. Learn how to introduce yourself in interview with powerful structure, best practices & expert tips for freshers and experienced professionals in 2026."/>
+    <meta name="keywords" content="self introduction for interview, how to introduce yourself in interview, tell me about yourself interview answer, self introduction for freshers in interview, professional self introduction in interview, interview introduction tips 2026, self introduction interview guide"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <style>
+        :root {
+            --primary: #7c3aed;
+            --primary-dark: #5b21b6;
+            --secondary: #ec4899;
+            --accent: #f59e0b;
+            --light: #f8fafc;
+            --gray: #4b5563;
+            --dark: #111827;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            color: var(--gray);
+            background: linear-gradient(135deg, #f3e8ff 0%, #e0f2fe 100%);
+            min-height: 100vh;
+        }
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        header {
+            text-align: center;
+            padding: 70px 20px 50px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            border-radius: 20px 20px 0 0;
+            box-shadow: 0 15px 40px rgba(124,58,237,0.25);
+        }
+        h1 { font-size: 2.8rem; margin-bottom: 16px; text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .intro { font-size: 1.25rem; max-width: 850px; margin: 0 auto; opacity: 0.95; }
+
+        .section {
+            background: white;
+            padding: 45px 40px;
+            margin: 35px 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.1);
+            border: 1px solid #e5e7eb;
+        }
+        h2 {
+            color: var(--primary-dark);
+            font-size: 2.2rem;
+            margin-bottom: 28px;
+            position: relative;
+            padding-bottom: 14px;
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100px;
+            height: 5px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            border-radius: 3px;
+        }
+        .highlight { color: var(--secondary); font-weight: 600; }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 28px;
+            margin: 35px 0;
+        }
+        .card {
+            background: linear-gradient(145deg, #ffffff, #f8f5ff);
+            padding: 30px;
+            border-radius: 16px;
+            border-left: 6px solid var(--primary);
+            transition: all 0.35s ease;
+            box-shadow: 0 6px 20px rgba(124,58,237,0.08);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 45px rgba(124,58,237,0.18);
+        }
+        .card i { font-size: 2.2rem; color: var(--secondary); margin-bottom: 16px; }
+
+        .tips-list {
+            list-style: none;
+            counter-reset: tip;
+        }
+        .tips-list li {
+            counter-increment: tip;
+            margin: 24px 0;
+            padding-left: 60px;
+            position: relative;
+            font-size: 1.05rem;
+        }
+        .tips-list li::before {
+            content: counter(tip);
+            position: absolute;
+            left: 0;
+            top: -4px;
+            width: 44px;
+            height: 44px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 60px 0;
+            font-size: 1.4rem;
+            color: var(--dark);
+            padding: 40px;
+            background: linear-gradient(135deg, #fef3ff, #e0f2fe);
+            border-radius: 20px;
+        }
+        .cta a {
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .cta a:hover { text-decoration: underline; color: var(--primary-dark); }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.3rem; }
+            .section { padding: 35px 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Self Introduction for Interview: Complete Guide with Pro Tips</h1>
+        <p class="intro">Master your <span class="highlight">self introduction for interview</span> with this step-by-step guide. Learn the perfect structure, essential tips, and best practices to create a strong first impression in every job interview.</p>
+    </header>
+
+    <div class="container">
+
+        <div class="section">
+            <h2>Why Your Self Introduction Is Important</h2>
+            <p>The opening question “Tell me about yourself” or “Please introduce yourself” is one of the most common in interviews. Your answer creates the first impression, shows confidence, clarity, structure, and relevance to the role. A strong introduction can set a positive tone for the entire conversation.</p>
+        </div>
+
+        <div class="section">
+            <h2>Recommended Structure for Self Introduction</h2>
+            <p>Use this proven 3-part framework that works in almost every interview:</p>
+            <div class="steps-grid">
+                <div class="card">
+                    <i class="fas fa-user-circle"></i>
+                    <h3>1. Present (10–15 seconds)</h3>
+                    <p>Start with your current professional identity / status. Mention your name, current role, highest qualification or most recent position.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-history"></i>
+                    <h3>2. Past (30–50 seconds)</h3>
+                    <p>Highlight relevant education, work experience, key achievements, and skills that match the job description. Focus only on what is valuable for this role.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>3. Future (15–25 seconds)</h3>
+                    <p>Explain why you are interested in this position / company and how you can contribute. End with enthusiasm and a smooth transition.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Complete List of Pro Tips for Self Introduction</h2>
+            <ul class="tips-list">
+                <li>Keep your introduction between 60–90 seconds — never longer than 2 minutes.</li>
+                <li>Practice speaking clearly, at a moderate pace with a confident tone.</li>
+                <li>Smile naturally and maintain good eye contact (especially in video interviews).</li>
+                <li>Customize your introduction for every job — use keywords from the job description.</li>
+                <li>Focus on professional information only — avoid personal details like family, age, hobbies unless directly asked.</li>
+                <li>Start strong: Begin with your name and current status clearly and energetically.</li>
+                <li>Use action verbs and quantify achievements when possible (increased, reduced, managed, delivered, etc.).</li>
+                <li>Avoid memorized robotic delivery — speak naturally as if having a conversation.</li>
+                <li>End with a bridge sentence that connects your skills to the company’s needs.</li>
+                <li>Do not repeat what is already written in your resume word-for-word.</li>
+                <li>Prepare 2–3 versions: one short (45–60 sec), one detailed (90 sec), and one very concise (30 sec).</li>
+                <li>Record yourself practicing — check for filler words (um, ah, like), speed, and clarity.</li>
+                <li>Show enthusiasm and genuine interest in the role and company.</li>
+                <li>Stay positive — never speak negatively about previous employers or experiences.</li>
+                <li>Be ready to expand any point if the interviewer asks follow-up questions.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Common Mistakes to Avoid</h2>
+            <ul class="tips-list" style="counter-reset: tip 0;">
+                <li>Giving a very long life story starting from childhood</li>
+                <li>Repeating your entire resume chronologically</li>
+                <li>Sharing irrelevant personal information</li>
+                <li>Using negative language or complaining about past jobs</li>
+                <li>Speaking too fast or too softly</li>
+                <li>Sounding rehearsed or robotic</li>
+                <li>Forgetting to connect your experience to the job requirements</li>
+                <li>Ending abruptly without showing interest in the role</li>
+            </ul>
+        </div>
+
+        <div class="cta">
+            Want more powerful interview preparation resources?<br/>
+            Discover expert guides, resume tips & latest job opportunities at <a href="https://requirehire.com">requirehire.com</a> 🚀
+        </div>
+
+    </div>
+
+</body>
+</html>
